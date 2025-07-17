@@ -1,0 +1,12 @@
+1. 创建Unity 3D项目（2021 LTS版最佳）
+2. 新建场景 > 添加平面（地面）
+3. 创建空物体命名为"Player" > 挂载所有脚本
+4. 为Player添加子物体Camera > 拖拽到脚本对应字段
+5. 导入武器/敌人模型后拖入场景
+
+> 测试快捷键：按`空格键`跳跃，`鼠标左键`射击，`Shift`加速跑
+
+需要扩展功能时可以参考：
+- 武器切换：使用Input.GetKeyDown(KeyCode.1)切换武器索引
+- 换弹系统：添加currentAmmo变量和Reload()方法
+- 音效管理：用AudioSource.PlayOneShot()播放射击音效

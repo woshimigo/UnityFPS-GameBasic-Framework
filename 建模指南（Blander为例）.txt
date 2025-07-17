@@ -1,0 +1,17 @@
+1. 武器建模要点
+   - 低多边形风格（500-2000三角面）  
+   - 确保枪口位置有独立顶点（用于粒子发射）  
+   - 导出FBX时勾选"Apply Transform"
+
+2. 敌人建模流程
+   (mermaid)
+   graph TD
+     A[基础人体比例] --> B[ZBrush雕刻细节]
+     B --> C[Retopology减面]
+     C --> D[UV展开]
+     D --> E[Substance Painter贴图]
+   
+
+3. Unity材质优化
+   - 使用Mobile/Diffuse Shader提升性能  
+   - 合并相同材质的物体减少Draw Call
